@@ -23,6 +23,7 @@ export default function AlignItemsList({ filters }: { filters: Genre[] }) {
 		return currentDate.toISOString();
 	});
 
+
 	return (
 		<>
 			<Box sx={{ px: 2 }}>
