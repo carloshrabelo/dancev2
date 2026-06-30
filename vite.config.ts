@@ -1,10 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base:'/dancev2/',
-  plugins: [react()],
+  base: '/dancev2/',
+  plugins: [ tailwindcss(), react()],
   server: {
     proxy: {
       // string shorthand: http://localhost:5173/foo -> http://localhost:4567/foo
