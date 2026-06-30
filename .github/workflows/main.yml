@@ -51,9 +51,9 @@ jobs:
       - name: Build application
         run: pnpm build
 
-      - name: Prepare Pages artifact
-        run: |
-          cp -a build/client/. public/
+      # - name: Prepare Pages artifact
+      #   run: |
+      #     cp -a build/client/. public/
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
@@ -61,7 +61,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./public
+          path: ./dist
 
       - name: Deploy to GitHub Pages
         id: deployment
