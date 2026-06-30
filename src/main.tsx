@@ -5,6 +5,8 @@ import App from "./App";
 import "./index.css";
 import Layout from "./layout";
 import SocialDetails from "./pages/social/details";
+import Home from "./pages/home";
+import SocialDetailsV2 from "./pages/social-details";
 
 const router = createBrowserRouter(
   [
@@ -15,6 +17,19 @@ const router = createBrowserRouter(
         {
           index: true,
           Component: App,
+        },
+      ],
+    },
+    {
+      path: "/v2",
+      children: [
+        {
+          index: true,
+          Component: Home,
+        },
+        {
+          path: ":id",
+          Component: SocialDetailsV2,
         },
       ],
     },

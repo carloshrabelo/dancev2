@@ -84,7 +84,7 @@ small {
 
 .card-expanded {
   width: min(900px, 100%);
-  min-height: 80vh;
+  min-height: 100vh;
 
   padding: 32px;
 
