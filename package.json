@@ -1,5 +1,5 @@
 {
-  "name": "calendar",
+  "name": "dance",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,34 +11,36 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emotion/react": "^11.13.0",
-    "@emotion/styled": "^11.13.0",
-    "@mui/material": "^6.0.0-beta.4",
-    "@mui/system": "^5.16.6",
-    "@phosphor-icons/react": "^2.1.7",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^9.1.2",
+    "@mui/system": "^9.1.2",
+    "@phosphor-icons/react": "^2.1.10",
     "ical": "^0.8.0",
-    "lodash": "^4.6.0",
+    "lodash": "^4.18.1",
     "lodash.groupby": "^4.6.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "zustand": "^4.5.4"
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router": "^8.1.0",
+    "zustand": "^5.0.14"
   },
   "devDependencies": {
+    "@react-router/dev": "^8.1.0",
     "@tailwindcss/vite": "^4.3.2",
     "@types/ical": "^0.8.3",
     "@types/lodash": "^4.17.24",
-    "@types/lodash.groupby": "^4.6.0",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "@typescript-eslint/eslint-plugin": "^7.15.0",
-    "@typescript-eslint/parser": "^7.15.0",
-    "@vitejs/plugin-react": "^4.3.1",
+    "@types/lodash.groupby": "^4.6.9",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@typescript-eslint/eslint-plugin": "^8.62.1",
+    "@typescript-eslint/parser": "^8.62.1",
+    "@vitejs/plugin-react": "^6.0.3",
     "daisyui": "^5.6.6",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-react-refresh": "^0.4.7",
+    "eslint": "^10.6.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.3",
     "tailwindcss": "^4.3.2",
-    "typescript": "^5.2.2",
-    "vite": "^5.3.4"
+    "typescript": "^6.0.3",
+    "vite": "^8.1.1"
   }
 }

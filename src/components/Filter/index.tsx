@@ -2,7 +2,7 @@ import type { Genre } from "../../const/GENRES";
 import { Box } from "@mui/material";
 import Tag from "../Tag";
 import { GENRES_COLORS } from "../../const/GENRES_COLORS";
-import { ArrowsClockwise, CaretUp, Funnel } from "@phosphor-icons/react";
+// import { ArrowsClockwise, CaretUp, Funnel } from "@phosphor-icons/react";
 import * as S from "./styles";
 import { useState } from "react";
 
@@ -50,19 +50,19 @@ export default function Filter({
 					<SealQuestion weight="duotone" size='1.5em'/>
 				</Tag> */}
 				<Tag color="gray" onClick={clearFilter}>
-					<ArrowsClockwise weight="bold" size="1.25em" />
+					{/* <ArrowsClockwise weight="bold" size="1.25em" /> */}
 				</Tag>
 			</Box>
 			{active ? 
 			<S.CloseBtn onClick={() => setActive(false)} >				
-				<CaretUp weight="duotone" size="1.25em" />
+				{/* <CaretUp weight="duotone" size="1.25em" /> */}
 			</S.CloseBtn> : null
 			}
 		</S.Wrapper>
 			{active ? null : 
 			<S.ShowFilter onClick={() => setActive(true)} >				
 				<S.Badge badgeContent={selected.length} color="primary">
-					<Funnel weight="duotone" size="1.25em" />
+					{/* <Funnel weight="duotone" size="1.25em" /> */}
 				</S.Badge>
 			</S.ShowFilter>
 			}

@@ -4,7 +4,7 @@ import ListItemText from "@mui/material/ListItemText";
 import { Chip, IconButton } from "@mui/material";
 import useEventAPI from "../../store/useEventAPI";
 import type { Genre } from "../../const/GENRES";
-import { Trash } from "@phosphor-icons/react";
+// import { Trash } from "@phosphor-icons/react";
 
 export default function AlignItemsList({ filters }:{ filters: Genre[] }) {
 	const { data, isLoading, error } = useEventAPI({ genres: filters });
@@ -23,7 +23,7 @@ export default function AlignItemsList({ filters }:{ filters: Genre[] }) {
 					key={key}
 					secondaryAction={
 						<IconButton edge="end" aria-label="delete">
-							<Trash />
+							{/* <Trash /> */}
 							<Chip color="primary" label="data.label" size="small"  />
 						</IconButton>
 					}

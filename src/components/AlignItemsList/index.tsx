@@ -5,7 +5,7 @@ import * as S from "./styles";
 import groupBy from "lodash/groupBy";
 import { Box, Divider, Drawer } from "@mui/material";
 import { Fragment, useState } from "react";
-import { X } from "@phosphor-icons/react";
+// import { X } from "@phosphor-icons/react";
 import { palette } from "../../theme/palette";
 
 export default function AlignItemsList({ filters }: { filters: Genre[] }) {
@@ -370,7 +370,7 @@ export default function AlignItemsList({ filters }: { filters: Genre[] }) {
               {selectedSocial?.summary}
               <div>
                 <S.CloseBtn color="red" onClick={() => setSelectedSocial(null)}>
-                  <X weight="bold" />
+                  {/* <X weight="bold" /> */}
                 </S.CloseBtn>
               </div>
             </Box>

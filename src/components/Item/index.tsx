@@ -4,7 +4,7 @@ import { genreToPalette } from "../../const/GENRES_COLORS";
 import type { Genre } from "../../const/GENRES";
 import type { Event } from "../../types/event";
 import * as S from "./styled";
-import { MapPin } from "@phosphor-icons/react";
+// import { MapPin } from "@phosphor-icons/react";
 import GenreTag from "../GenreTag";
 import { palette } from "../../theme/palette";
 import { getTime } from "../../utils/dateFormater";
@@ -79,7 +79,7 @@ export default function Item({
 								target="_blank"
 								rel="noreferrer"
 							>
-								<MapPin weight="duotone"/> {ev.location}
+								{/* <MapPin weight="duotone"/> {ev.location} */}
 							</a>
 						</small>
 						<Grid
