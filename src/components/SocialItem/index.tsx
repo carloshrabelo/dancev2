@@ -18,6 +18,12 @@ export default function SocialItem({ ev: event }: any) {
             <span className="badge badge-xs badge-soft badge-primary">
               Xsmall
             </span>
+            <span className="badge badge-xs badge-soft badge-secondary">
+              Xsmall
+            </span>
+            <span className="badge badge-xs badge-soft badge-accent">
+              Xsmall
+            </span>
           </div>
         </div>
       </div>
