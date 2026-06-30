@@ -51,9 +51,10 @@ jobs:
       - name: Build application
         run: pnpm build
 
-      # - name: Prepare Pages artifact
+      - name: Prepare Pages artifact
       #   run: |
       #     cp -a build/client/. public/
+        run: cp dist/index.html dist/404.html
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
