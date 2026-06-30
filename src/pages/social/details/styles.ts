@@ -1,0 +1,67 @@
+import styled from "@emotion/styled";
+import { css } from "@emotion/react";
+import { Tag } from "../../../components/Item/styled";
+import { getContrastingColor } from "../../../utils/getContrastingColor";
+import { palette } from "../../../theme/palette";
+
+export const Head = styled.h2<{ xpto?: boolean }>`
+  font-size: 14px;
+  background-color: ${palette['dark-gray'].main};
+  color: ${getContrastingColor(palette['dark-gray'].main)};
+  flex: 1;
+  text-align: center;
+  font-weight: 700;
+  padding: 4px 12px;
+  position: relative;
+  border-radius: ${p => !p.xpto && '10px 10px 0 0'};
+  position: sticky;
+  align-content: center;
+  top: 0;
+  z-index: 2;
+  ${p => p.xpto && css`
+  min-height: 2em;
+  text-align: left;
+  `};
+
+`;
+
+export const Footer = styled.h2`
+  font-size: 14px;
+  background-color: ${palette['dark-gray'].main};
+  color: ${getContrastingColor(palette['dark-gray'].main)};
+  flex: 1;
+  text-align: center;
+  font-weight: 700;
+  padding: 4px 12px;
+  position: relative;
+  border-radius:  0 0 10px 10px;
+  cursor: pointer;
+  position: sticky;
+  bottom: 0;
+  margin-bottom: 10px;
+`;
+
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid hsla(220, 35%, 88%, 0.5);
+
+  &>div:first-of-type{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  &>div:last-of-type{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+`;
+
+export const CloseBtn = styled(Tag)`
+  display: block;
+  font-size: .9em;
+  line-height: 2em;
+  height: 2em;
+  width: 1.5em;
+`

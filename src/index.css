@@ -42,3 +42,56 @@ small {
   font-family: "Feather", "DIN Next Rounded LT W04 Medium", "Roboto",
     "Helvetica", "Arial", sans-serif;
 }
+
+::view-transition-old(*) {
+  animation: fade-out .3s;
+}
+
+::view-transition-new(*) {
+  animation: fade-in .3s;
+}
+
+::view-transition-group(*) {
+  animation-duration: 400ms;
+  animation-timing-function: cubic-bezier(.22,.61,.36,1);
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+.card {
+  width: 320px;
+  padding: 20px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 10%);
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  padding: 48px;
+}
+
+.card-expanded {
+  width: min(900px, 100%);
+  min-height: 80vh;
+
+  padding: 32px;
+
+  border-radius: 20px;
+
+  background: white;
+
+  box-shadow: 0 20px 50px rgb(0 0 0 / 15%);
+}
+

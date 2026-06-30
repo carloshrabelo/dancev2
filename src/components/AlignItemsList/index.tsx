@@ -4,9 +4,10 @@ import Item from "../Item";
 import * as S from "./styles";
 import groupBy from "lodash/groupBy";
 import { Box, Divider, Drawer } from "@mui/material";
-import { Fragment, useState } from "react";
+import { useState } from "react";
 // import { X } from "@phosphor-icons/react";
 import { palette } from "../../theme/palette";
+import { Link } from "react-router";
 
 export default function AlignItemsList({ filters }: { filters: Genre[] }) {
   const { data, isLoading, error } = useEventAPI({ genres: filters });
@@ -302,11 +303,12 @@ export default function AlignItemsList({ filters }: { filters: Genre[] }) {
                 </Box>
               </S.Head>
               <S.Content>
+
                 {sociais?.map((ev, key) => (
-                  <Fragment key={ev.id}>
+                  <Link key={ev.id} to={`/social/${ev.id}`} viewTransition>
                     {!!key && <Divider sx={{ mx: 2 }} />}
-                    <Item {...ev} onClick={() => setSelectedSocial(ev)} />
-                  </Fragment>
+                    <Item className="card" ev={ev} />
+                  </Link>
                 ))}
               </S.Content>
               <S.Footer>
